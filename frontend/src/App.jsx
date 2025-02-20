@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/common/Sidebar";
 
 import OverviewPage from "./pages/OverviewPage";
+import InventoryList from "./components/InventoryList";
 import ProductsPage from "./pages/ProductsPage";
 import UsersPage from "./pages/UsersPage";
 import SalesPage from "./pages/SalesPage";
@@ -22,6 +23,7 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<OverviewPage />} />
+        <Route path="/inventory" element={<InventoryList />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/sales" element={<SalesPage />} />
